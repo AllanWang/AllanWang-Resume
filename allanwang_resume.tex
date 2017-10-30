@@ -1,0 +1,149 @@
+% !TEX program = xelatex
+
+% v1.0
+
+\documentclass[]{allanwang-resume}
+	\usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \usepackage{tikz}
+\begin{document}
+
+\firstname{Allan}
+\lastname{Wang}
+\phone{(778) 968-5909}
+\email{me@allanwang.ca}
+\website{allanwang.ca/dev}
+\github{AllanWang}
+\header
+
+\begin{minipage}[t][][b]{0.33\textwidth}~
+
+	\resizebox{0.628\textwidth}{!}{
+		\newcommand\logoheight{3.19}
+		\begin{tikzpicture}[line width=2mm, line cap=round, draw opacity = 0.7]
+			\draw (-1, 0) -- (-2, \logoheight);
+			\draw (1, 0) -- (2, \logoheight);
+			\draw [accent] (-1, 0) -- (0, \logoheight);
+			\draw [accent] (1, 0) -- (0, \logoheight);
+		\end{tikzpicture}
+	}
+
+	\vspace{0.26cm}
+
+	\section{Education}
+	\subsection{McGill University}
+	\descript{BS in Software Engineering}
+	\content{Sep 2015 | Montreal, QC}
+	J.W. McConnell Scholarship \\
+	Exp. Grad 12/18
+	\sectionsep
+
+	\section{Course Work}
+	\subsection{Undergraduate}
+	\content{Computer Science}
+	Algorithms \& Data Structures \\
+	Software Design \\
+	Programming Lang \& Paradigms \\
+	Operating Systems \\
+	Theory of Computation \\
+	Software Engineering Project \\
+	\content{Mathematics}
+	Linear Algebra \& Geometry \\
+	Discrete Structures \\
+	Calculus \\
+	\sectionsep
+
+	\section{Skills}
+	\subsection{Programming}
+	\content{Over 5000 lines}
+	Java \tb Kotlin \tb Android \tb Git \tb HTML\\
+	\content{Over 1000 lines}
+	C \tb JavaScript \tb SCSS \tb Bash \tb \LaTeX\ \\
+	\content{Familiar}
+	Python \tb OCaml \tb PHP \\
+	\sectionsep
+
+	\section{Open Source}
+	\subsection{Other Contributions}
+	\content{github.com}
+	AllanWang/Capsule \\
+	AllanWang/sNNake-2.1 \\
+	jahirfiquitiva/IconShowcase \\
+	\content{gitlab.science.mcgill.ca}
+	TEPID/tepid-commons \\
+	server-team/Messenger-Bot \\
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+	\section{Projects}
+
+	\project{Kotlin Android Utils}{Open Source}{Jun 2017 - Present}
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\begin{tightemize}
+		\item Extensive collection of \textbf{Android} extensions and pure \textbf{Kotlin} functions
+		\item Contains numerous implementations of complex views, and delegates for common UI patterns \& concurrency handling.
+	\end{tightemize}
+
+	\project{Frost for Facebook}{Open Source}{May 2017 - Present}
+	\begin{tightemize}
+		\item Third party wrapper adding native features to Facebook's mobile site
+		\item Builds upon \textbf{reactive} programming to deal with multithreaded loading.
+	\end{tightemize}
+
+	\project{TEPID}{McGill Computer Taskforce}{Jun 2016 - Present}
+	\begin{tightemize}
+		\item Printing system used by over \textbf{6000} students at \textbf{McGill University}
+		\item Contributed to production code for the server, website, and client
+		\item Wrote an \textbf{Android} counterpart to help manage the print jobs
+	\end{tightemize}
+
+	\project{Artwork DIY}{Haiyi}{Jul 2017 - Nov 2017}
+	\begin{tightemize}
+		\item Lead an \textbf{Android} app for selling phone cases online
+		\item Used matrices to manipulate image sets, and integrated the app with \textbf{PayPal} and a \textbf{Rest API}.
+	\end{tightemize}
+
+	\project{matchr}{Hack Harvard}{Oct 2017}
+	\begin{tightemize}
+		\item Created an \textbf{Android} application that takes in user data, stores it on \textbf{Firebase}, \& computes candidate matches
+		\item UI \& data sets are completely separated so the questions can be modified on the fly.
+	\end{tightemize}
+
+	\project{Material Glass}{Open Source}{Mar 2013 - Jun 2017}
+	\begin{tightemize}
+		\item Created the first system theme for \textbf{Android} L using the Cyanogenmod Theme Engine, amassing over \textbf{600 000} downloads on the play store.
+		\item Greatly improved workflow by creating scripts and using CI.
+	\end{tightemize}
+
+	\project{VR Playground}{McHacks}{Jan 2017}
+	\begin{tightemize}
+		\item Built an interactive VR field using \textbf{A-Frame}
+	\end{tightemize}
+
+	\project{AllanBot}{Open Source}{Sep 2015 - Jun 2016}
+	\begin{tightemize}
+		\item Created a bot API backed by both the official \textbf{messenger API} \& a third party chat API
+		\item Built using \textbf{Node.js} \& integrated with \textbf{Firebase}
+	\end{tightemize}
+
+	\sectionsep
+	\section{Experience}
+
+	\project{Server Admin}{Computer Taskforce}{Mar 2016 - Present}
+	\begin{tightemize}
+		\item Create \& maintain printing and web services for students at McGill
+		\item Manage VMs \& REST APIs used within the services
+	\end{tightemize}
+
+	\project{Tutor}{McGill Tutoring Service}{Sep 2016 - Present}
+	\begin{tightemize}
+		\item Tutor other students in Math \& CS
+		\item Created a website with notes for various classes
+		\item Moderate \& help previously taken courses on Facebook on my own time
+	\end{tightemize}
+
+\end{minipage}
+\end{document}
