@@ -149,7 +149,7 @@
 	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\content}[1]{
-	\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont \textcolor{accent}{#1\\} \normalfont}
+	\color{accent}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #1\\ \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{ 
@@ -163,3 +163,5 @@
 	\ifnum\commandkey{stars} > 0 \textcolor{accent}{\faStar} \, \commandkey{stars} \quad \fi
 	\ifnum\commandkey{forks} > 0 \textcolor{accent}{\faCodeFork} \, \commandkey{forks} \quad \fi
 }
+
+\newcommand{\pair}[2]{#1 \, \color{accent}\selectfont | \, #2 \normalfont}
