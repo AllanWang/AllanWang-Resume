@@ -170,9 +170,9 @@
 \newcommand{\tb}[0]{\textbullet{\,}}
 
 \newkeycommand{\stats}[downloads=0,stars=0, forks=0]{
-	\ifnum\commandkey{downloads} > 0 \textcolor{accent}{\faDownload} \, \commandkey{downloads} \quad \fi
-	\ifnum\commandkey{stars} > 0 \textcolor{accent}{\faStar} \, \commandkey{stars} \quad \fi
-	\ifnum\commandkey{forks} > 0 \textcolor{accent}{\faCodeFork} \, \commandkey{forks} \quad \fi
+	\ifnum\commandkey{downloads} > 0 \textcolor{date}{\faDownload} \, \commandkey{downloads} \quad \fi
+	\ifnum\commandkey{stars} > 0 \textcolor{date}{\faStar} \, \commandkey{stars} \quad \fi
+	\ifnum\commandkey{forks} > 0 \textcolor{date}{\faCodeFork} \, \commandkey{forks} \quad \fi
 }
 
 \newcommand{\pair}[2]{#1 \, \color{accent}\selectfont | \, #2 \normalfont}
