@@ -14,3 +14,48 @@ Huge thanks to him for opening his version, along with the openfonts.
 
 The template will only compile with *XeTeX*.
 It also supports magic comments for [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) (VS-Code)
+
+## Components
+
+### Header
+
+The header is bundled up with a series of name definitions like so:
+
+```latex
+\firstname{Allan}
+\lastname{Wang}
+\phone{(778) 968-5909}
+\email{me@allanwang.ca}
+\website{allanwang.ca/dev}
+\github{AllanWang}
+\header
+```
+
+### Statistics
+
+Statistics will highlight the number of downloads, starts, and forks through optional arguments:
+
+```latex
+\item[] \stats[downloads=66500, stars=26, forks=10]
+```
+
+### Projects
+
+Project headers are formatted through three arguments:
+
+The name, the organization, and the date.
+
+```latex
+\project{Kotlin Android Utils}{Open Source}{Jun 2017 - Present}
+```
+
+### Text Styles
+
+The cls bundles some formatted text styles, including
+
+```latex
+\section{Main}
+\subsection{Sub}
+\descript{Description}
+\content{Content}
+```
