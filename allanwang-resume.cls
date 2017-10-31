@@ -45,7 +45,7 @@
 \DeclareAuthorVariable*{website}
 \DeclareAuthorVariable*{phone}
 
-\usepackage{array}
+\usepackage{array,keycommand}
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
@@ -157,3 +157,9 @@
 			  {\end{itemize}\vspace{-0.7\topsep}}
 			  
 \newcommand{\tb}[0]{\textbullet{\,}}
+
+\newkeycommand{\stats}[downloads=0,stars=0, forks=0]{
+	\ifnum\commandkey{downloads} > 0 \textcolor{accent}{\faDownload} \, \commandkey{downloads} \quad \fi
+	\ifnum\commandkey{stars} > 0 \textcolor{accent}{\faStar} \, \commandkey{stars} \quad \fi
+	\ifnum\commandkey{forks} > 0 \textcolor{accent}{\faCodeFork} \, \commandkey{forks} \quad \fi
+}
