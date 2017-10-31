@@ -1,3 +1,14 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Changelog
+%
+% v1.1
+% * Added \stats function
+% 
+% v1.0
+% * Initial release
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Intro Options
 \ProvidesClass{allanwang-resume}[2017/09/28 CV class]
 \NeedsTeXFormat{LaTeX2e}
