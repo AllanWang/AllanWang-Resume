@@ -22,12 +22,12 @@ It also supports magic comments for [LaTeX Workshop](https://github.com/James-Yu
 The header is bundled up with a series of name definitions like so:
 
 ```latex
-\firstname{Allan}
-\lastname{Wang}
-\phone{(778) 968-5909}
-\email{me@allanwang.ca}
-\website{allanwang.ca/dev}
-\github{AllanWang}
+\firstname{First}
+\lastname{Last}
+\phone{(xxx) xxx-xxxx}
+\email{me@website.ca}
+\website{website.ca}
+\github{GithubUsername}
 \header
 ```
 
@@ -36,7 +36,7 @@ The header is bundled up with a series of name definitions like so:
 Statistics will highlight the number of downloads, starts, and forks through optional arguments:
 
 ```latex
-\item[] \stats[downloads=66500, stars=26, forks=10]
+\stats[downloads=66500, stars=26, forks=10]
 ```
 
 ### Projects
