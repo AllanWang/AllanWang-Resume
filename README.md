@@ -59,3 +59,15 @@ The cls bundles some formatted text styles, including
 \descript{Description}
 \content{Content}
 ```
+
+### Links
+
+As an Android developer, I've added some helper functions for linking projects. Namely:
+
+```latex
+\githublink{name}{repo}{text}
+\mygithub{repo}[text (repo name be default)]
+\playstorelink{package}{text}
+```
+
+Links are typically formatted as lowercase to avoid conflicts with the upper case text styles.
