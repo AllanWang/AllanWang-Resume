@@ -8,7 +8,7 @@ Huge thanks to him for opening his version, along with the openfonts.
 
 ## Preview
 
-![Preview](https://www.allanwang.ca/resume-snapshot.PNG)
+![Preview](https://www.allanwang.ca/resume-snapshot.png)
 
 ## Dependencies
 
