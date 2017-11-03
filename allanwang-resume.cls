@@ -1,3 +1,16 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Changelog
+%
+% v1.1
+% * Added \stats function
+% * Added lots of commands for links
+% * Added color options
+% 
+% v1.0
+% * Initial release
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Intro Options
 \ProvidesClass{allanwang-resume}[2017/09/28 CV class]
 \NeedsTeXFormat{LaTeX2e}
@@ -45,7 +58,7 @@
 \DeclareAuthorVariable*{website}
 \DeclareAuthorVariable*{phone}
 
-\usepackage{array}
+\usepackage{array,keycommand}
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
@@ -70,6 +83,7 @@
 
 % Font Awesome
 \usepackage{fontawesome}
+\usepackage{hyperref,xparse} 
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -99,6 +113,11 @@
 	\end{tabular}
 }
 
+\newcommand{\githublink}[3]{\lowercase{\href{https://www.github.com/#1/#2}}{#3}}
+
+\NewDocumentCommand{\mygithub}{mo}
+{\githublink{\ting@github}{#1}{\IfValueTF{#2}{#2}{#1}}}
+
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcommand{\header}[0]{
 
@@ -110,9 +129,9 @@
   	\begin{minipage}{0.6\textwidth}
     	\hfill
 		\headertable{\textcolor{accent}{\faPhone} \, \ting@phone}
-		{\textcolor{accent}{\faChain} \, \ting@website}
-		{\textcolor{accent}{\faEnvelope} \, \ting@email}
-		{\textcolor{accent}{\faGithub} \, github.com/\ting@github}
+		{\href{https://www.\ting@website}{\textcolor{accent}{\faChain} \, \ting@website}}
+		{\href{mailto:\ting@email}{\textcolor{accent}{\faEnvelope} \, \ting@email}}
+		{\href{https://www.github.com/\ting@github}{\textcolor{accent}{\faGithub} \, github.com/\ting@github}}
 	\end{minipage} \\
 }
 
@@ -149,7 +168,7 @@
 	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\content}[1]{
-	\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont \textcolor{accent}{#1\\} \normalfont}
+	\color{accent}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont #1\\ \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{ 
@@ -157,3 +176,13 @@
 			  {\end{itemize}\vspace{-0.7\topsep}}
 			  
 \newcommand{\tb}[0]{\textbullet{\,}}
+
+\newkeycommand{\stats}[downloads=0,stars=0, forks=0]{
+	\ifnum\commandkey{downloads} > 0 \textcolor{date}{\faDownload} \, \commandkey{downloads} \quad \fi
+	\ifnum\commandkey{stars} > 0 \textcolor{date}{\faStar} \, \commandkey{stars} \quad \fi
+	\ifnum\commandkey{forks} > 0 \textcolor{date}{\faCodeFork} \, \commandkey{forks} \quad \fi
+}
+
+\newcommand{\pair}[2]{#1 \, {\addfontfeature{Color=date}| \, #2}}
+
+\newcommand{\playstorelink}[2]{\lowercase{\href{https://play.google.com/store/apps/details?id=#1}}{#2}}
