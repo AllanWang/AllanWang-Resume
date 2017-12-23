@@ -39,6 +39,8 @@ Statistics will highlight the number of downloads, starts, and forks through opt
 \stats[downloads=66500, stars=26, forks=10]
 ```
 
+![Preview](images/preview_stats.png)
+
 ### Projects
 
 Project headers are formatted through three arguments:
