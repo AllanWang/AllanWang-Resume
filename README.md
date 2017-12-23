@@ -8,13 +8,7 @@ Huge thanks to him for opening his version, along with the openfonts.
 
 ## Preview
 
-<object data="https://www.allanwang.ca/resume.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://www.allanwang.ca/resume.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.allanwang.ca/resume.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
-<!-- ![Preview](https://www.allanwang.ca/resume-snapshot.png) -->
+![Preview](https://www.allanwang.ca/resume-snapshot.png)
 
 ## Dependencies
 
