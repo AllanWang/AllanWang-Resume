@@ -120,7 +120,7 @@
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcommand{\header}[0]{
-
+	\hspace*{-\parindent}%
 	\begin{minipage}{0.4\textwidth}
 		\newdimen\headerheight
 		\headerheight=\textheight
