@@ -82,6 +82,8 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Font Awesome
+\defaultfontfeatures{
+    Path = fonts/fa/ }
 \usepackage{fontawesome}
 \usepackage{hyperref,xparse} 
 
