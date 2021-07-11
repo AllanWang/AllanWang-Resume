@@ -14,7 +14,7 @@ Huge thanks to him for opening his version, along with the openfonts.
 
 The template will only compile with *XeTeX*.
 It also supports magic comments for [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) (VS-Code).
-For minimal setup, import to [Overleaf](https://www.overleaf.com/blog/new-feature-select-your-tex-live-compiler-version) and [select XeLaTeX](https://www.overleaf.com/blog/new-feature-select-your-tex-live-compiler-version) as your compiler.
+For minimal setup, import to [Overleaf](https://www.overleaf.com/) and [select XeLaTeX](https://www.overleaf.com/blog/new-feature-select-your-tex-live-compiler-version) as your compiler.
 
 ## Components
 
